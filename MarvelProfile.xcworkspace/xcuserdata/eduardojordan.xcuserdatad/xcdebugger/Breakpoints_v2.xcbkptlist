@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A83E99AF-20E2-4B00-B554-DB64F848E33A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43C1D68B-A6FC-43CB-A7EF-978DF5ACB57B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MarvelProfile/Server/WebService/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "APIService"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "43C1D68B-A6FC-43CB-A7EF-978DF5ACB57B - ed8cf16875f12744"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MarvelProfile.APIService.queryParams.getter : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "MarvelProfile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eduardojordan/Desktop/MarvelProfile/MarvelProfile/Server/WebService/APIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "43C1D68B-A6FC-43CB-A7EF-978DF5ACB57B - 3b043a537b5fe59e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MarvelProfile.APIService.init() -&gt; MarvelProfile.APIService"
+                  moduleName = "MarvelProfile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eduardojordan/Desktop/MarvelProfile/MarvelProfile/Server/WebService/APIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "155">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
