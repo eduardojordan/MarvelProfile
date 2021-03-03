@@ -10,7 +10,6 @@ import XCTest
 
 class MarvelProfileTests: XCTestCase {
 
-
     func testParseJsonFile() throws {
         guard let pathString = Bundle(for: type(of: self)).path(forResource: "marvel", ofType: "json") else {
             fatalError("json not found")

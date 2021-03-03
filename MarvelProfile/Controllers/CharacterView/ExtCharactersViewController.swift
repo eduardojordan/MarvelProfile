@@ -55,7 +55,7 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource {
         if !isLoading && indexPath.row == lastElement {
             
             
-//            TODO Make pagination
+// MARK: TODO Make pagination
 //            print("RELOAD Characters")
 //            ApiURL.shared.limit =  ApiURL.shared.limit + 20
 //            print("ApiURL.limit",ApiURL.shared.limit)

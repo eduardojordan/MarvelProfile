@@ -97,19 +97,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bMQ-S8-Mfv">
-                                <rect key="frame" x="0.0" y="88" width="414" height="494"/>
+                                <rect key="frame" x="0.0" y="141.5" width="414" height="494"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="494" id="39o-zH-TvC"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVX-I5-ZCj">
-                                <rect key="frame" x="20" y="600" width="374" height="27.5"/>
+                                <rect key="frame" x="20" y="653.5" width="374" height="27.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mds-bK-tAA">
-                                <rect key="frame" x="20" y="642.5" width="374" height="146"/>
+                                <rect key="frame" x="20" y="696" width="374" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="146" id="qtZ-B6-n1j"/>
                                 </constraints>
@@ -121,9 +121,9 @@
                         <viewLayoutGuide key="safeArea" id="xXb-fl-lxI"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="xXb-fl-lxI" firstAttribute="bottom" secondItem="Mds-bK-tAA" secondAttribute="bottom" constant="20" id="Dfo-1j-Wkl"/>
                             <constraint firstItem="RVX-I5-ZCj" firstAttribute="leading" secondItem="xXb-fl-lxI" secondAttribute="leading" constant="20" id="KTx-af-haZ"/>
                             <constraint firstItem="bMQ-S8-Mfv" firstAttribute="leading" secondItem="xXb-fl-lxI" secondAttribute="leading" id="NfA-jv-Raq"/>
-                            <constraint firstItem="bMQ-S8-Mfv" firstAttribute="top" secondItem="xXb-fl-lxI" secondAttribute="top" id="PXe-td-B7K"/>
                             <constraint firstItem="RVX-I5-ZCj" firstAttribute="top" secondItem="bMQ-S8-Mfv" secondAttribute="bottom" constant="18" id="VMa-kl-tDF"/>
                             <constraint firstItem="Mds-bK-tAA" firstAttribute="top" secondItem="RVX-I5-ZCj" secondAttribute="bottom" constant="15" id="WcB-UJ-xu3"/>
                             <constraint firstItem="xXb-fl-lxI" firstAttribute="trailing" secondItem="Mds-bK-tAA" secondAttribute="trailing" constant="20" id="atL-PP-XHG"/>

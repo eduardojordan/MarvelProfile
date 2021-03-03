@@ -16,14 +16,12 @@ struct ResultsCharacters: Decodable {
 }
 
 struct DataCharacter: Decodable {
-    
     var id: Int?
     var name: String?
     var description: String?
     var image: URL?
     
     enum CodingKeys: String, CodingKey {
-        
         case id
         case name
         case description
@@ -33,7 +31,6 @@ struct DataCharacter: Decodable {
     }
     
     init(from decoder: Decoder)throws {
-        
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
         id = try container.decode(Int.self, forKey: .id)

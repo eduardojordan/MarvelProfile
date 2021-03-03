@@ -10,7 +10,6 @@ import Foundation
 class ViewModelCharacter {
     
     var refreshData = { () -> () in }
-    
     var characterData : [DataCharacter] = [] {
         didSet {
             refreshData()
