@@ -13,16 +13,16 @@ This project is carried out:
 
 
 #### Possible improvements
-*Include a search engine at the top
-*Include pagination for data loading
+* Include a search engine at the top
+* Include pagination for data loading
 
 #### Software used
-*Adobe Illustrator
-*Icon Set Creator
-*terminal
-*sublime Text
-*Postman
-*Xcode
+* Adobe Illustrator
+* Icon Set Creator
+* terminal
+* sublime Text
+* Postman
+* Xcode
 
 APIMARVEL: https://developer.marvel.com
 
