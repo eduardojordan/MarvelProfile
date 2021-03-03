@@ -7,21 +7,26 @@
 
 import Foundation
 import CryptoSwift
+import UIKit
 
-class ApiURL{
+class ApiURL  {
     
-    static var page = 0
-    static let basePath = "https://gateway.marvel.com/v1/public/characters?"
-    static let pathCharacters = "/characters?"
-    static let limit =  40//100
-    static private let privateKey = Constants.API_KEY_PRIVATE
-    static private let publicKey = Constants.API_KEY_PUBLIC
+    static let shared = ApiURL()
     
-    static func getCredentials() -> String{
+     var page = 0
+     let basePath = "https://gateway.marvel.com/v1/public/characters?"
+     let pathCharacters = "/characters?"
+     var limit =  100 //100
+     private let privateKey = Constants.API_KEY_PRIVATE
+     private let publicKey = Constants.API_KEY_PUBLIC
+
+    
+    func getCredentials() -> String {
         let ts = Date().timeIntervalSince1970.description
         let hash = "\(ts)\(privateKey)\(publicKey)".md5()
         let authParams = ["ts": ts, "apikey": publicKey, "hash": hash]
         return authParams.queryString!
     }
+
     
 }

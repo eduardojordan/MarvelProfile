@@ -17,6 +17,7 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellCharacters") as! CellCellCharactersViewController
+        
         let marvelHero = viewModel.characterData[indexPath.row]
         
         cell.selectionStyle = .none
@@ -25,8 +26,8 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource {
         
         let imgData = "\(marvelHero.image!)" + "/portrait_xlarge.jpg"
         let url = URL(string: imgData)
-    
-        if (url == nil || imgData.contains("image_not_available"))  {
+
+        if (url == nil || imgData.contains("image_not_available")  ) { // || NSFileReadUnknownError == 256
             cell.imgChracters?.image = UIImage(named: "ImageNotAvailable2")
             cell.imgChracters?.contentMode = .scaleAspectFill
         } else {
@@ -51,16 +52,20 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let lastElement = self.viewModel.characterData.count - 1
-                if !isLoading && indexPath.row == lastElement {
-                    
-                    print("HALAR ELEMEMTOS")
-                    activity.startAnimating()
-                    activity.isHidden = false
-                    ApiURL.page += 1
-                 
-                
-                    }
-            }
+        if !isLoading && indexPath.row == lastElement {
+            
+            
+//            TODO Make pagination
+//            print("RELOAD Characters")
+//            ApiURL.shared.limit =  ApiURL.shared.limit + 20
+//            print("ApiURL.limit",ApiURL.shared.limit)
+//            self.isLoading = true
+//            self.configureView()
+//            self.bind()
+
+            
+        }
+    }
     
 
     
