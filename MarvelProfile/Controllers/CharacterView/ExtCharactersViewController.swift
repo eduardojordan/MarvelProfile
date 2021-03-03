@@ -26,14 +26,15 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource {
         
         let imgData = "\(marvelHero.image!)" + "/portrait_xlarge.jpg"
         let url = URL(string: imgData)
+       
 
-        if (url == nil || imgData.contains("image_not_available")  ) { // || NSFileReadUnknownError == 256
+        if (url == nil || imgData.contains("image_not_available")) { // || NSFileReadUnknownError == 256
+            print("imgData",imgData)
             cell.imgChracters?.image = UIImage(named: "ImageNotAvailable2")
             cell.imgChracters?.contentMode = .scaleAspectFill
         } else {
             cell.imgChracters?.image = UIImage(url: URL(string: imgData))
             cell.imgChracters?.contentMode = .scaleAspectFill
-            print("imgData",imgData)
         }
         
         return cell
