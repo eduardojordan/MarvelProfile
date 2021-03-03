@@ -26,4 +26,5 @@ Xcode
 
 APIMARVEL: https://developer.marvel.com
 
+* Info: Not all characters have a description and photo
 
