@@ -7,7 +7,24 @@
 
 import Foundation
 
-struct ViewModelCharacter {
+class ViewModelCharacter {
+    
+    var refreshData = { () -> () in }
+    
+    var characterData : [DataCharacter] = [] {
+        didSet {
+            refreshData()
+        }
+    }
+    
+    func retrieveData() {
+        let apiService = APIService()
+        apiService.apiToGetCharacterData { (results) in
+            self.characterData = results.data!.results
+            
+        }
+    }
     
     
 }
+
